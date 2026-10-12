@@ -1,0 +1,21 @@
+/* ===== Page Réalisations ===== */
+.image-projets {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.image-projets img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid var(--ligne);
+    box-shadow: 0 4px 12px rgba(15, 37, 87, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-projets img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 24px rgba(15, 37, 87, 0.18);
+}

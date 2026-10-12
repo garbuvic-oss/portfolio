@@ -1,0 +1,38 @@
+/* ===== Page Centres d'intérêt ===== */
+.passion-section {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.image-passion {
+    flex-shrink: 0;
+    width: 160px;
+    height: auto;
+    object-fit: contain;
+}
+
+.passion-texte p { margin: 0; }
+
+.titre-valeurs { margin-top: 2.5rem; }
+
+.liste-valeurs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.liste-valeurs li {
+    padding: 1rem 1.2rem;
+    background: var(--fond);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 6px 6px 0;
+    line-height: 1.6;
+}
+
+@media (max-width: 640px) {
+    .passion-section { flex-direction: column; }
+}
